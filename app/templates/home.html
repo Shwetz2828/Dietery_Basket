@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-lg">
+                <div class="card-body">
+                    <h2 class="text-center mb-4">Welcome to <span class="highlight">Smart Grocery Optimization</span>!</h2>
+                    <p class="lead text-center">Discover <span class="highlight">personalized grocery recommendations</span> tailored just for you.</p>
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.594Uk7IK_ykWQm9MxI6BgQHaE8&pid=Api&P=0&h=220" alt="Grocery Shopping" class="img-fluid rounded mb-4 mx-auto d-block animate__animated animate__bounceInDown">
+                    <div class="text-center mb-4">
+                        <a href="/recommendations" class="btn btn-primary btn-lg mr-2 animate__animated animate__fadeInLeft">Get Recommendations</a>
+                        <a href="{{ url_for('main.login') }}" class="btn btn-secondary btn-lg animate__animated animate__fadeInRight">Login</a>
+
+                    </div>
+                    <p class="text-center">Don't have an account? <a href="{{ url_for('main.signup') }}" class="btn btn-secondary">Sign Up</a></p>
+                    <hr>
+                    <h3 class="text-center mb-3">About <span class="highlight">Smart Grocery Optimization</span></h3>
+                    <p><span class="highlight">Smart Grocery Optimization</span> is your go-to app for hassle-free grocery shopping. We provide you with personalized grocery recommendations based on your dietary needs, lifestyle choices, and health goals. Whether you're following a specific diet, aiming to eat healthier, or looking for meal inspiration, our app has got you covered. Say goodbye to guesswork and hello to a smarter, more efficient way to shop for groceries.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
